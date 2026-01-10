@@ -22,16 +22,44 @@
 
 # misc
 .DS_Store
+Thumbs.db
+.idea/
+.vscode/
+.history/
+*.swp
+*.swo
+*~
 *.pem
+*.key
+*.crt
+*.p12
+*.pfx
+*.cert
+*.secret
 
 # debug
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+pnpm-debug.log*
+*.log
+*.out.log
+*.err.log
+frontend*.log
+frontend*.out.log
+frontend*.err.log
+run-frontend*.log
+run-frontend*.out.log
+run-frontend*.err.log
+turbo.log
 
 # env files (can opt-in for commiting if needed)
 .env*
 !.env.example
+.env.local
+.env.development.local
+.env.production.local
+.env.test.local
 
 # vercel
 .vercel
@@ -39,3 +67,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# build caches
+.turbo/
+.cache/
+tmp/
+temp/
